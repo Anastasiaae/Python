@@ -1,3 +1,4 @@
+import math
 salary = 5000  # Ежемесячная зарплата
 spend = 6000  # Траты за первый месяц
 months = 10  # Количество месяцев
@@ -12,4 +13,4 @@ for _ in range(months):
     spend *= (1 + increase)
 
 
-print(f"Подушка безопасности, чтобы протянуть 10 месяцев без долгов:", round(required_cushion))
+print(f"Подушка безопасности, чтобы протянуть 10 месяцев без долгов:", math.ceil(required_cushion))
